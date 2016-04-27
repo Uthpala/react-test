@@ -10,7 +10,7 @@ class UserTable extends React.Component{
                     ( user.gender === 'male' && !this.props.male ) ||
                     ( user.gender === 'female' && !this.props.female ) ||
                     ( !this.props.male && !this.props.female )
-            ) {
+                ){
                 return;
             }
             rows.push(<UserRow key={user.id} name={user.name} gender={user.gender} />)
